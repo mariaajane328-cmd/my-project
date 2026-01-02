@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stranger things season 5 web page</title>
+    <!---ACCESS TP GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" >
+    <link rel="stylesheet" href="style.css">
+    <script src="SCRIPT.JS"></script>
+</head>
+<body>
+    <header class="site-header">
+<div class="container header-inner">
+    <!---for changings in logo-->
+<div class="logo">STRANGER <span>THINGS</span></div>
+<!---nav containing links-->
+<nav class="my-nav">
+    <a href="#hero">Hero</a>
+    <a href="#cast">Cast</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#gallery">Gallery</a>
+</nav>
+</div>
+</header>
+<!--section for hero-->
+<section id="hero" class="hero-section">
+    <!--background postyer will be applied through css-->
+    <!--overlay a transparentv layer to add cenametic effects-->
+    <div class="hero-overlay"></div>
+    <div class="contain hero-content">
+        <!--contain logo png-->
+    <image src="stlogo.png" alt="Starnger things logo" class="st-logo"></image>  
+    <!--tagline on hero section-->
+    <p class="tagline">THE final Battle Begins</p> 
+    <!---its only a description text -->
+    <p class="short-text">Stranger Things — Season 5. The fight for Hawkins reaches a new darkness.project demo.</p>
+    <div class="hero-cta">
+        <!--button for trailer-->
+        <button class="btn" id="watchTrailerBtn">Watch Trailer</button>
+        <div id="trailerModal">
+    <span id="closeTrailer">&times;</span>
+
+    <iframe
+        id="trailerFrame"
+        src=""
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+</div>
+        
+         </div>
+    </div>
+</section> 
+ 
+
+<!--section for cast-->
+<section id="cast" class ="cast-section">
+    <div class="contain section-inner">
+    <h2 class="section-title">Main Cast</h2>
+<div class="cast-columns"></div>
+    <!--layout of  cast arranged in rows and columns-->
+    <div class="cast-layout">
+        <!--container for  all info about one cast memeber-->
+    <div class="cast-card"  data-name="Eleven">
+        <!--here thumb means thumbnail-->
+        <div class="cast-thumb">
+            <img src="eleven.avif" alt="miliebobbybrown">
+            <!--here hover means somthing happens when move the mouse-->
+            <div class="cast-hover-overlay"></div>
+        </div>
+            <div class="cast-info">
+                <h3 class="actor-name">Millie Bobby Brown</h3>
+                <p class="actor-role">Eleven</p>
+            </div>
+    </div>
+
+        <div class="cast-card" data-name="Mike">
+            <div class="cast-thumb">
+                <img src="mike.jpg" alt="Mike">
+                <div class="cast-hover-overlay"></div>
+            </div>
+            <div class="cast-info">
+                <h3 class="actor-name">Finn Wolfhard</h3>
+                <p class="actor-role">Mike</p>
+            </div>
+        </div>
+
+        <div class="cast-card" data-name="Dustin">
+            <div class="cast-thumb">
+            <img src="dustin.webp"alt="Dustin">
+            <div class="cast-hover-overlay"></div>
+            </div>
+            <div class="cast-info">
+            <h3 class="actor-name">Gaten Matarazzo</h3>
+            <p class="actor-role">Dustin</p>
+            </div>
+        </div>
+        <div class="cast-card" data-name="Max">
+          <div class="cast-thumb">
+            <img src="madmax.jpg" alt="Max">
+            <div class="cast-hover-overlay"></div>
+          </div>
+        <div class="cast-info">
+            <h3 class="actor-name">Sadie Sink</h3>
+            <p class="actor-role">Max</p>
+          </div>
+    </div>   
+    <div class="cast-card" data-name="Will">
+          <div class="cast-thumb">
+            <img src="will.jpg" alt="Will">
+            <div class="cast-hover-overlay"></div>
+          </div>
+        <div class="cast-info">
+            <h3 class="actor-name">Noah Schnapp</h3>
+            <p class="actor-role">Will</p>
+          </div>
+    </div>
+
+    <div class="cast-card" data-name="Holly">
+          <div class="cast-thumb">
+            <img src="holly.jpg" alt="holly">
+            <div class="cast-hover-overlay"></div>
+          </div>
+          <div class="cast-info">
+            <h3 class="actor-name">Nell Fisher</h3>
+            <p class="actor-role">Holly</p>
+          </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--EPISODE SECTION-->
+<section id="episodes" class="episode-section">
+    <div= class="contain section-error">
+        <h2 class="section-title">Season 5-Episode Guide</h2>
+    
+        <div class="episode-list">
+            <!--episode card of ep1-->
+        <article class="episode-card">
+            <img src="episode1.jpg"alt="Episode 1">
+            <!--here body means all the that contains all the text-->
+            <div class="episode-body">
+            <h3>Episode 1 — The Crawl</h3>
+            <p>The gang begins a desperate hunt for Vecna — Hawkins is under quarantine, and darkness creeps in as old wounds reopen. </p> </div>
+            </article>
+         
+            <!--episode card of of ep2-->
+            <article class="episode-card">
+                <img src="episode2.webp"alt="Episode 2">
+                <div class="epsode-body">
+                    <h3>Episode 2 — The Vanishing of Holly Wheeler</h3>
+                    <p>When Holly Wheeler disappears after a terrifying attack, the stakes go up — and loyalties are tested as the town descends into chaos.</p>
+                </div>
+            </article>
+
+            <!--episode card of ep3-->
+            <article class="episode-card">
+          <img src="episode3.jpg" alt="Episode 3">
+          <div class="episode-body">
+            <h3>Episode 3 — The Turnbow Trap</h3>
+            <p>The group lays a risky trap to draw out the unknown enemy — but not everything goes as planned, and tensions erupt.</p>
+          </div>
+        </article>
+
+        <!--episode card of ep 4-->
+        <article class="episode-card">
+          <img src="episode4.jpg" alt="Episode 3">
+          <div class="episode-body">
+            <h3>Episode 4 — Shock Jock</h3>
+            <p>As radio waves broadcast fear, the town spirals further into panic — someone’s voice becomes the key to terrifying truths.</p>
+          </div>
+        </article>
+            </div>
+        </div>
+</section>
+
+<!--Gallery Section-->
+<section id="gallery" class="gallery-section">
+    <div class="contain section-inner">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+        <div class="gallery-image"><img src="photo1.jpg"alt="photo"></div>
+        <div class="gallery-image"><img src="photo2.jpg"alt="photo"></div>
+        <div class="gallery-image"><img src="photo3.jpg"alt="photo"></div>
+        <div class="gallery-image"><img src="photo4.jpg"alt="photo"></div>
+    </div>
+    </div>
+</section>
+
+  <!--Footer-->
+   <footer class="site-footer">
+    <div class="contain footer-inner">
+        <div class="footer-left">
+            <p>Created by: <strong>Mariam,Faiza,Taskeen,Aqsa</strong></p>
+            <p>AICT — Sem 1</p>
+        </div>
+        <div class="footer-right">
+            <p>Project:Stranger Things-Season 5(webpage)</p>
+        </div>
+    </div>
+   </footer>
+
+ <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
